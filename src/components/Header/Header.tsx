@@ -9,7 +9,7 @@ const Header = () => {
           <ul className="header__nav--list flex items-center gap-4">
             <li className="header__list--item">
               <a
-                href="https://github.com/npocmoBaxTy"
+                href="https://github.com/npocmoBaxTy/GitHubApi"
                 className="header__link underline"
               >
                 GitHub
