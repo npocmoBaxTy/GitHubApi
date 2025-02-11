@@ -31,4 +31,5 @@
    ```bash
    npm install
 3. Запустите приложение:
-  npm run start   
+  ```bash
+   npm run start   
