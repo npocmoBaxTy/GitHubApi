@@ -1,50 +1,34 @@
-# React + TypeScript + Vite
+# GitHub Repos Search App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Этот проект представляет собой приложение для поиска репозиториев на GitHub с возможностью бесконечной прокрутки и динамической подгрузки данных. Пользователи могут искать репозитории по ключевым словам, и результаты будут отображаться по мере прокрутки.
 
-Currently, two official plugins are available:
+## Особенности
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Поиск репозиториев:** Ищите репозитории по ключевым словам, и результаты будут отображаться в реальном времени.
+- **Бесконечный скролл:** Новый контент подгружается автоматически при прокрутке до конца.
+- **Дебаунсинг:** Запросы на сервер отправляются с задержкой для уменьшения количества запросов.
+- **Адаптивный интерфейс:** Приложение работает на мобильных устройствах и на экранах разных размеров.
+- **React + TypeScript:** Приложение написано с использованием React и TypeScript.
+- **Vite:** Используется для сборки и разработки.
 
-## Expanding the ESLint configuration
+## Технологии
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- **React**
+- **TypeScript**
+- **Vite**
+- **Tailwind CSS** для стилей
+- **React Query** для работы с API
+- **Intersection Observer API** для реализации бесконечной прокрутки
 
-- Configure the top-level `parserOptions` property like this:
+## Установка
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+1. Клонируйте репозиторий:
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+   ```bash
+   git clone https://github.com/ваш-аккаунт/GitHub-Repos.git
+   cd GitHub-Repos
+2. Установите зависимости:
+   ```bash
+   npm install
+3. Запустите приложение:
+  npm run start   
